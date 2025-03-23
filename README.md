@@ -1,2 +1,2 @@
 # academix
-This is a bag e-commerce site project is incomplete so some things are missing but I did everything myself from scratch html css javascript php mysql
+This is a bag e-commerce website project. The project is incomplete, so there are some missing parts, but I built everything from scratch myself using HTML, CSS, JavaScript, PHP, and MySQL.
