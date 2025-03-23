@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fcfcec;
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+.logo img{
+height: 100px;
+width: 100%;
+}
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+.nav-item:hover{
+    padding: 5px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.activ{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+font-family: "Jaro", sans-serif;
+}
+.offcanvas-body{
+    background-color: rgb(36, 36, 36);
+}
+.offcanvas-header{
+    background-color: rgb(36, 36, 36);
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.confirim-order{
+    position: absolute;
+    top: 40%;
+    padding: 50px;
+    border-radius: 50%;
+}
+
+.confirim-img i{
+font-size: 50px;
+color:rgb(36, 36, 36);
+}
+.confirim-text{
+    font-size: 25px;
+    font-family: "Jaro", sans-serif;
+    text-transform: capitalize;
+}
+.confirim-button button{
+    font-size: 15px;
+    border: none;
+    font-family: "Jaro", sans-serif;
+    background-color: rgb(36, 36, 36);;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+
+#loader {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcec;;
+    z-index: 9999; 
+    display: none;
+}
+
+
+
+.loader-image img {
+    width: 100%;
+}
+
+.loader-image {
+    position: absolute;
+    top: 40%; 
+}
+
+/* Ruj görseli */
+.ruj-image img {
+    width: 40%;
+}
+
+.ruj-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Kitap görseli */
+.book-image img {
+    width: 50%; 
+}
+
+.book-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Baget görseli */
+.baget-image img {
+    width: 70%;
+}
+
+.baget-image {
+    position: absolute;
+    top: -10%;
+    right: 44%;
+}
+
+/* Kalem görseli */
+.pencil-image img {
+    width: 40%;
+}
+
+.pencil-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%;
+}
+
+@keyframes anim {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 46%;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+
+}
+@media screen and (max-width: 993px) {
+  .bags{
+    display: none;
+  }
+  .responsive-bags{
+    display:block;
+  }
+  .ruj-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.book-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.baget-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.pencil-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+
+.offcanvas {
+    background-color: rgb(36, 36, 36) !important; /* Siyah ve %80 saydamlık */
+}
+nav{
+    background-color: rgb(36, 36, 36) !important;
+}
+
+.nav-item {
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+.nav-item:hover {
+    background-color: aliceblue;
+    border-radius: 50px;
+    transition: 500ms;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white !important;
+    font-family: "Jaro", sans-serif;
+    font-size: 18px;
+    transition: color 500ms;
+}
+
+.nav-link:hover {
+    color: black !important; /* Üzerine gelince siyah olacak */
+}
+.bags-image img{
+    width: 100%;
+    border-radius: 50px;
+}
+.bags-pictures button{
+    border: none;
+    width: 100%;
+}
+.bags{
+    position: relative;
+    top: 10vh;
+}
+.pictures img{
+width: 100%;
+}
+.bags-header textarea{
+width: 100%;
+padding: 10px;
+}
+.bags-header input{
+    width: 100%;
+    padding: 10px;
+    }
+.bags-header label{
+    font-family: "Jaro", sans-serif;
+}

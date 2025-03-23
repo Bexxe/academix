@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #fcfcec;
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+.logo img{
+height: 100px;
+width: 100%;
+}
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+.nav-item:hover{
+    padding: 5px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.activ{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+font-family: "Jaro", sans-serif;
+}
+.offcanvas-body{
+    background-color: rgb(36, 36, 36);
+}
+.offcanvas-header{
+    background-color: rgb(36, 36, 36);
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+.bag{
+    background-color: rgb(36, 36, 36);
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden; /* Taşmaları gizler */
+
+}
+
+.bag img{
+    border-radius: 40px;
+    width: 95%;
+    height: 90vh;
+}
+
+.bag-text{
+position: absolute;
+bottom: 0%;
+color: #fcfcec;
+display: none;
+font-family: "Jaro", sans-serif;
+text-transform: uppercase;
+font-size: 18px;
+}
+.bags a{
+    text-decoration: none;
+    color: #fcfcec;
+}
+.bag-btn button{
+    border: none;
+    background-color: #fcfcec;
+    width: 35%;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "Jaro", sans-serif;
+}
+
+.respo-bag-img{
+position: relative;
+}
+
+.respo-bag-img img{
+    width: 100%;
+    height: 90vh;
+}
+.respo-bag-img{
+    position: relative;
+}
+#kahverengiimg{
+    position: absolute;
+    top: 60%;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-left: 0%;
+}
+#siyahimg{
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    filter: blur(0px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#beyazimg{
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    filter: blur(0px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.respo-bag img{
+    width: 100%;
+    height: 50vh;
+}
+@keyframes baggelis{
+    0%{
+        left:100%;
+        opacity: 0;
+        filter: blur(10px);
+        
+    }
+    100%{
+        left:50%;
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+@keyframes baggelis2{
+    0%{
+        margin-left: -100%;
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+@keyframes baggidis{
+    0%{
+        right:50%;
+        opacity: 1;
+        filter: blur(10px);
+        margin-rleft: 0%;
+        
+    }
+    100%{
+        right:100%; 
+        opacity: 0;
+        filter: blur(0px);
+        margin-left: -100%;
+    }
+}
+@keyframes baggidis2{
+    0%{
+        left:50%;
+        opacity: 1;
+        filter: blur(10px);
+        
+    }
+    100%{
+        left:100%;
+        opacity: 0;
+        filter: blur(0px);
+    }
+}
+.next-btn button{
+position: absolute;
+bottom: 40%;
+right: 1%;
+background: none;
+border: none;
+font-size: 40px;
+}
+.back-btn button{
+    position: absolute;
+    bottom: 40%;
+   background: none;
+   border: none;
+   font-size: 40px;
+   left: 1%;
+    }
+    .bag-btn-box button{
+        border: none;
+        background-color: #fcfcec;
+        width: 50%;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: "Jaro", sans-serif;
+    }
+    
+
+@keyframes bagtextanimnext {
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+@keyframes bagtextanimback{
+    0%{
+        bottom: 10%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+.responsive-bags{
+    display: none;
+  }
+
+  .sepet{
+    position: relative;
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nokta{
+    background-color: red;
+    border-radius: 100px;
+    text-align: center;
+    width: 15px;
+    position: absolute;
+    bottom: 55%;
+    left: 70%;
+    font-size: 10px;
+    
+}
+#loader {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcec;;
+    z-index: 9999; 
+}
+
+
+
+.loader-image img {
+    width: 100%;
+}
+
+.loader-image {
+    position: absolute;
+    top: 40%; 
+}
+
+/* Ruj görseli */
+.ruj-image img {
+    width: 40%;
+}
+
+.ruj-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Kitap görseli */
+.book-image img {
+    width: 50%; 
+}
+
+.book-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Baget görseli */
+.baget-image img {
+    width: 70%;
+}
+
+.baget-image {
+    position: absolute;
+    top: -10%;
+    right: 44%;
+}
+
+/* Kalem görseli */
+.pencil-image img {
+    width: 40%;
+}
+
+.pencil-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%;
+}
+
+@keyframes anim {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 46%;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+
+}
+@media screen and (max-width: 993px) {
+  .bags{
+    display: none;
+  }
+  .responsive-bags{
+    display:block;
+  }
+  .ruj-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.book-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.baget-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.pencil-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+}

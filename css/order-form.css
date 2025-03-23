@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+.logo img{
+height: 100px;
+width: 100%;
+}
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+.nav-item:hover{
+    padding: 5px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.activ{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+font-family: "Jaro", sans-serif;
+}
+.offcanvas-body{
+    background-color: rgb(36, 36, 36);
+}
+.offcanvas-header{
+    background-color: rgb(36, 36, 36);
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.product-box{
+    background-color: white;
+    padding:10px;
+    border-radius: 30px;
+    
+}
+.basket-product{
+    background-color: rgb(36, 36, 36);
+    border-top-right-radius: 150px;
+    border-right: 1px solid white;
+    max-height: 100%;
+    height:75vh;
+    overflow-y:scroll;
+}
+
+
+.basket-product-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.basket-product-text{
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+}
+.total-price{
+    background-color: rgb(36, 36, 36);
+    border-bottom-right-radius: 150px;
+    border-right: 1px solid white;
+    border-top  : 1px solid white;
+    height: 10vh;
+}
+.total-text{
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.form-box{
+    background-color: rgb(36, 36, 36);
+    height: 85vh;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+.text-box input[type="text"]{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+    border: none;
+}
+.text-box textarea{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    height: 20vh;
+}
+.form-button button{
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid white;   
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: "Jaro", sans-serif;
+    transition: 500ms;
+    margin-top: -180px;
+}
+.form-button button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 500ms;
+}
+
+.modal-content{
+    font-family: "Jaro", sans-serif;
+    background-color: rgb(36, 36, 36);
+    color: white;
+}
+
+#loader {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcec;;
+    z-index: 9999; 
+}
+
+
+
+.loader-image img {
+    width: 100%;
+}
+
+.loader-image {
+    position: absolute;
+    top: 40%; 
+}
+
+/* Ruj görseli */
+.ruj-image img {
+    width: 40%;
+}
+
+.ruj-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Kitap görseli */
+.book-image img {
+    width: 50%; 
+}
+
+.book-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Baget görseli */
+.baget-image img {
+    width: 70%;
+}
+
+.baget-image {
+    position: absolute;
+    top: -10%;
+    right: 44%;
+}
+
+/* Kalem görseli */
+.pencil-image img {
+    width: 40%;
+}
+
+.pencil-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%;
+}
+
+@keyframes anim {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 46%;
+    }
+}
+.scroll-btn{
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+
+}
+@media screen and (max-width: 993px) {
+  .ruj-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.book-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.baget-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.pencil-image{
+    position: absolute;
+    top: -10%;
+    right: 37%;
+}
+.product-box{
+    background-color: white;
+    padding:10px;
+    border-radius: 30px;
+    
+}
+.basket-product{
+    background-color: rgb(36, 36, 36);
+    border-top-right-radius: 150px;
+    border-right: 1px solid white;
+    max-height: 100%;
+    height:70vh;
+    overflow-y:scroll;
+}
+.basket-product-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.basket-product-text{
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+}
+.total-price{
+    background-color: rgb(36, 36, 36);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 1px solid white;
+    border-top  : 1px solid white;
+    height: 15vh;
+}
+.total-text{
+    color: white;
+    font-family: "Jaro", sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 32%;
+    }
+    .product-box{
+        background-color: white;
+        padding:10px;
+        border-radius: 30px;
+        
+    }
+    .basket-product{
+        background-color: rgb(36, 36, 36);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 30px;
+        border-right: 1px solid white;
+        max-height: 100%;
+        height:65vh;
+        overflow-y:scroll;
+    }
+    
+    .basket-product-image img{
+        width: 100%;
+        border-radius: 30px;
+    }
+    
+    .basket-product-text{
+        font-family: "Jaro", sans-serif;
+        font-size: 20px;
+    }
+    .total-price{
+        background-color: rgb(36, 36, 36);
+        border-bottom-left-radius: 0px;
+        border-right: 1px solid white;
+        border-top  : 1px solid white;
+        height: 20vh;
+    }
+    .total-text{
+        color: white;
+        font-family: "Jaro", sans-serif;
+        font-size: 17px;
+        text-transform: capitalize;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .basket-product{
+        background-color: rgb(36, 36, 36);
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        max-height: 100%;
+        height:75vh;
+        overflow-y:scroll;
+    }
+    .total-price{
+        background-color: rgb(36, 36, 36);
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-right: 1px solid white;
+        border-top  : 1px solid white;
+        height: 10%;
+    }
+    .form-box{
+        background-color: rgb(36, 36, 36);
+        height: 85% ;
+       border-radius: 30px;
+       border-radius: 0;
+    }
+    .scroll-box{
+        width: 50%;
+        left: 25%;
+        position: relative;
+        max-height: 100%;
+        height:100%;
+        overflow-y:scroll;
+    }
+    .scroll-btn{
+        display: inline;
+        position: absolute;
+        right:5%;
+       margin-top: 50px;    
+    }
+    .scroll-btn button{
+      background-color: white;
+      border: none;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 100px;
+    }
+}

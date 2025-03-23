@@ -1,0 +1,782 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(251, 248, 248);
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+.logo img{
+height: 100px;
+width: 100%;
+}
+
+.nav-item {
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+
+.nav-item:hover {
+    padding: 5px;
+    background-color: white; /* Arka plan beyaz olacak */
+    color: black; /* Metin rengi siyah olacak */
+    border-radius: 50px;
+    transition: 500ms;
+}
+
+.active {
+    background-color: white; /* Aktif durumda arka plan beyaz */
+    color: black; /* Aktif durumda metin rengi siyah */
+    border-radius: 50px;
+}
+
+.nav-link {
+    text-decoration: none; /* Alt çizgi kaldırıldı */
+    color: white; /* Varsayılan metin rengi beyaz */
+    font-family: "Jaro", sans-serif;
+}
+
+.nav-link:hover {
+    color: black; /* Hover durumunda metin siyah olacak */
+}
+
+
+
+
+.offcanvas-body{
+    background-color: rgb(36, 36, 36);
+}
+.offcanvas-header{
+    background-color: rgb(36, 36, 36);
+}
+.sepet{
+    position: relative;
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.bag-slider{
+    position: relative;
+    z-index: 999;
+}
+
+.bag-slider img{
+    border-radius: 50px;
+    
+  }
+.bag-header{
+    font-family: "Jaro", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+.bag-header-color{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 50px;
+}
+.bag-header-dimenson{
+    background-color: rgb(36, 36, 36);
+    color: white;
+    border-radius: 50px;
+}
+.bag-header-dimenson i{
+font-size: 20px;
+}
+.bag-header-color i{
+    font-size: 20px;
+    }
+.bag-color img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.bag-model{
+    max-height: 100%;
+    height:20vh;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+.bag-model img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.bag-dimension button{
+    border: none;
+width: 100%;
+}
+.bag-dimension img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nokta{
+    background-color: red;
+    border-radius: 100px;
+    text-align: center;
+    width: 15px;
+    position: absolute;
+    bottom: 55%;
+    left: 70%;
+    font-size: 10px;
+    
+}
+
+
+.price-tag{
+    position: relative;
+    right: 8%;
+    top: 50%;
+}
+.tag-text{
+    position: relative;
+    left: 20%;
+    bottom: 50%;
+    color: white;
+    font-size: 35px;
+    font-family: "Jaro", sans-serif;
+}
+.price-tag img{
+width: 100%;
+}
+.bags-header{
+     text-transform: uppercase;
+     color: black;
+     font-size: 30px;
+     font-family: "Jaro", sans-serif;
+}
+
+.end-bags{
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+    border-right: 0px solid red;
+    border-top: 0px solid red;
+    border-left: 0px solid red;
+    border-bottom: 0px solid red;
+
+    border-radius: 30px;
+    background-color: rgb(36, 36, 36);
+    font-family: "Jaro", sans-serif;
+
+  animation: spin 2s linear infinite;
+  transition: 500ms;
+}
+
+
+@keyframes spin {
+    0% {
+      border: 5px solid transparent;
+      border-top: 5px solid red; 
+    }
+    25% {
+      border: 5px solid transparent;
+      border-right: 5px solid red;
+    }
+    50% {
+      border: 5px solid transparent;
+      border-bottom: 5px solid red; 
+    }
+    75% {
+      border: 5px solid transparent;
+      border-left: 5px solid red; 
+    }
+    100% {
+      border: 5px solid transparent;
+      border-top: 5px solid red;
+    }
+
+}
+
+
+.basket-button button{
+    border: none;
+    text-transform: capitalize;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(36, 36, 36);
+    font-family: "Jaro", sans-serif;
+    position: relative;
+    bottom: 90%;
+}
+.basket-button i{
+position: relative;
+left:-25%;
+
+}
+@keyframes baskethover {
+    0% {
+        left:-25%;
+    }
+    50% {
+        left:65%;
+    }
+
+
+}
+@keyframes basketover {
+    0% {
+        left:60%;
+    }
+    50% {
+        left:-25%;
+    }
+
+
+}
+
+#loader {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcec;;
+    z-index: 9999; 
+}
+
+
+
+.loader-image img {
+    width: 100%;
+}
+
+.loader-image {
+    position: absolute;
+    top: 40%; 
+}
+
+/* Ruj görseli */
+.ruj-image img {
+    width: 40%;
+}
+
+.ruj-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Kitap görseli */
+.book-image img {
+    width: 50%; 
+}
+
+.book-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%; 
+}
+
+/* Baget görseli */
+.baget-image img {
+    width: 70%;
+}
+
+.baget-image {
+    position: absolute;
+    top: -10%;
+    right: 44%;
+}
+
+/* Kalem görseli */
+.pencil-image img {
+    width: 40%;
+}
+
+.pencil-image {
+    position: absolute;
+    top: -10%; 
+    right: 44%;
+}
+
+@keyframes anim {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 46%;
+    }
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 20%;
+}
+.popup-text{
+    color: white;
+    font-size: 25px;
+    font-family: "Jaro", sans-serif;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 1399px) {
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .popup-box {
+        background-color: #242424;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 30%;
+    }
+    .popup-text{
+        color: white;
+        font-size: 25px;
+        font-family: "Jaro", sans-serif;
+    }
+    
+    .close-btn {
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+
+    
+}
+
+@media screen and (max-width: 1199px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .popup-box {
+        background-color: #242424;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 30%;
+    }
+    .popup-text{
+        color: white;
+        font-size: 25px;
+        font-family: "Jaro", sans-serif;
+    }
+    
+    .close-btn {
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    
+}
+.end-bags-sm{
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 37%;
+    }
+
+    .end-bags-lg{
+        display: none;
+    }   
+    .end-bags-sm{
+        display: block;
+    }   
+    .tag-img{
+        display: none;
+    }
+    .tag-text{
+        position: relative;
+        left: 40%;
+        top: 20%;
+        color: rgb(36, 36, 36);
+        font-size: 35px;
+        font-family: "Jaro", sans-serif;
+    }
+.basket-button button{
+    .basket-button button{
+        border: none;
+        text-transform: capitalize;
+        color: white;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: rgb(36, 36, 36);
+        font-family: "Jaro", sans-serif;
+        position: relative;
+        bottom: 90%;
+
+    }
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 50%;
+}
+.popup-text{
+    color: white;
+    font-size: 25px;
+    font-family: "Jaro", sans-serif;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+}
+
+.end{
+    justify-content: start;
+}
+.price{
+    justify-content: start;
+}
+.basket{
+    justify-content: start;
+}
+@media screen and (max-width: 767px) {
+    .tag-img{
+        display: none;
+    }
+    .tag-text{
+        position: relative;
+        left: 12%;
+        bottom: 50%;
+        color: rgb(36, 36, 36);
+        font-size: 35px;
+        font-family: "Jaro", sans-serif;
+    }
+    .end-bags-lg{
+        display: block;
+    }   
+    .end-bags-sm{
+        display: none;
+    }  
+    .basket{
+        justify-content: center;
+    }
+    
+.end{
+    justify-content: center;
+}
+.price{
+    justify-content: center;
+}
+.basket{
+    justify-content: center;
+}
+.ruj-image{
+    position: absolute;
+    top: -10%;
+    right: 32%;
+}
+.book-image{
+    position: absolute;
+    top: -10%;
+    right: 32%;
+}
+.baget-image{
+    position: absolute;
+    top: -10%;
+    right: 32%;
+}
+.pencil-image{
+    position: absolute;
+    top: -10%;
+    right: 32%;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 60%;
+}
+.popup-text{
+    color: white;
+    font-size: 25px;
+    font-family: "Jaro", sans-serif;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+}
+
+@media screen and (max-width: 575px) {
+    .tag-img{
+        display: none;
+    }
+    .tag-text{
+        position: relative;
+        left: 12%;
+        bottom: 50%;
+        color: rgb(36, 36, 36);
+        font-size: 35px;
+        font-family: "Jaro", sans-serif;
+    }
+    .end{
+        justify-content: center;
+    }
+    .price{
+        justify-content: center;
+    }    
+    .basket{
+        justify-content: center;
+    }
+
+    .ruj-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .book-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .baget-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .pencil-image{
+        position: absolute;
+        top: -10%;
+        right: 25%;
+    }
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.757); /* Saydam arkaplan */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .popup-box {
+        background-color: #242424;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        width: 80%;
+    }
+    .popup-text{
+        color: white;
+        font-size: 25px;
+        font-family: "Jaro", sans-serif;
+    }
+    
+    .close-btn {
+        margin-top: 10px;
+        padding: 8px 16px;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
